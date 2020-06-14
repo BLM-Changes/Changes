@@ -1,19 +1,21 @@
 .SmallChangeClass {
   width: 75%;
   height: 200px;
-  margin-left: 36px;
+  margin-left: 0;
   margin-right: 36px;
-  background-color: var(--main-bg-color);
+  background-color: white;
   color: var(--darkgrey-text) !important;
 }
 
 .SmallChangeContent {
-  padding: 25px;
+  padding-top: 25px;
 }
 
 .SmallChangeContent h3 {
   color: var(--darkgrey-text) !important;
   font-weight: 800;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .changeLink {
@@ -25,6 +27,7 @@
 .Author {
   float: right;
   font-style: italic !important;
+  margin-right: 12px;
 }
 
 .bold {
