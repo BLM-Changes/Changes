@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Button, Container, Row, Col} from 'react-bootstrap'
-import ChangesFeed from './change-feed'
-import Supporter from './supporter'
+import ChangesFeed from '../../ChangeFeed/change-feed'
+import Supporter from '../../supporter'
 // import {ChangesFeed, Supporter, Supporting} from './components'
-
+import styles from './userHome.module.css'
 /**
  * COMPONENT
  */
@@ -13,8 +13,8 @@ export const UserHome = props => {
   // const {email} = props
 
   return (
-    <div>
-      <div>
+    <div className={styles.MainContainer}>
+      <div className={styles.MainHeader}>
         <h3>Welcome, {props.user.userName}</h3>
       </div>
 

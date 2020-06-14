@@ -2,13 +2,23 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Tab, Tabs, Jumbotron} from 'react-bootstrap'
-import PreviewChanges from './change-preview'
-
+import PreviewChanges from '../ChangePreview/change-preview'
+import styles from './changeFeed.module.css'
 const arrOfChanges = [
-  {title: 'abc', body: 'sdbsjkdvbsbvojsdvos'},
-  {title: 'def', body: 'sdbsjkdvbsbvojsdvos'},
-  {title: 'ghi', body: 'sdbsjkdvbsbvojsdvos'},
-  {title: 'jhk', body: 'sdbsjkdvbsbvojsdvos'}
+  {
+    id: 1,
+    author: 'Andrew Paulino',
+    title: 'First',
+    body:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor auctor lacus at semper. Fusce dictum quam ante, at tempor augue tincidunt vitae...'
+  },
+  {
+    id: 2,
+    author: 'Alex Javier',
+    title: 'Second',
+    body:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor auctor lacus at semper. Fusce dictum quam ante, at tempor augue tincidunt vitae. Aenea...'
+  }
 ]
 
 class ChangesFeed extends React.Component {
@@ -36,26 +46,26 @@ class ChangesFeed extends React.Component {
 
   render() {
     return (
-      <div padding="10 px">
+      <div className={styles.FeedContainer}>
         <Tabs activeKey={this.state.activeTab} onSelect={this.handleSelect}>
           <Tab eventKey={1} title="Trending">
             <Jumbotron>
               <PreviewChanges
                 props={arrOfChanges}
-                name=" that are Happening NOW"
+                name=" That Are Happening Now"
               />
             </Jumbotron>
           </Tab>
           <Tab eventKey={2} title="Public Feed">
             <Jumbotron>
-              <PreviewChanges props={arrOfChanges} name=" in Public Feed" />
+              <PreviewChanges props={arrOfChanges} name=" In Public Feed" />
             </Jumbotron>
           </Tab>
           <Tab eventKey={3} title="Your Communities">
             <Jumbotron>
               <PreviewChanges
                 props={arrOfChanges}
-                name=" in Your Communities"
+                name=" In Your Communities"
               />
             </Jumbotron>
           </Tab>

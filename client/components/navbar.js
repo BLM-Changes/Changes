@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
+import {Button} from 'react-bootstrap'
 import allActions from '../actions/allActions'
 import styles from './pages/HomePage/homePage.module.css'
 
@@ -27,7 +28,9 @@ const Navbar = ({handleClick, isLoggedIn}) => (
         </div>
         <div className={styles.BannerLinks}>
           <a href="/signIn">Login</a>
-          <a href="/register">Register</a>
+          <Button className={styles.RegButton}>
+            <a href="/register">Register</a>
+          </Button>
         </div>
       </div>
     )}

@@ -1,0 +1,11 @@
+@import url('../../../css-variables.css');
+
+.MainContainer {
+  background-color: var(--main-bg-color) !important;
+  color: var(--darkgrey-text) !important;
+  margin-left: 36px;
+}
+
+.MainHeader {
+  margin: 18px 0;
+}

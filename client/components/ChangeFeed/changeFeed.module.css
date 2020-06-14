@@ -1,0 +1,5 @@
+@import url('../../css-variables.css');
+
+.FeedContainer * {
+  background-color: var(--main-bg-color) !important;
+}

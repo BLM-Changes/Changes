@@ -2,7 +2,31 @@
 
 .Container {
   background-color: var(--main-bg-color);
-  height: 60vh;
+  height: 40vh;
+}
+
+.RegButton {
+  background-color: var(--primary-color-faded) !important;
+  color: var(--darkgrey-text) !important;
+  font-weight: 800 !important;
+  margin-right: 36px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  border: none !important;
+}
+
+.RegButton:hover {
+  background-color: var(--primary-color-darker) !important;
+  color: var(--third-grey-text) !important;
+}
+
+.RegButton a {
+  text-decoration: none !important;
+  color: var(--darkgrey-text) !important;
+}
+
+.RegButton a:hover {
+  color: var(--darkgrey-text) !important;
 }
 
 .Banner {
@@ -73,7 +97,7 @@
 }
 
 .SplashFeedContainer {
-  height: 48vh;
+  height: 50vh;
   background-color: black;
 }
 
@@ -87,13 +111,14 @@
 
 .SplashFeed {
   display: flex;
-  justify-content: space-around;
   margin-top: 28px;
 }
 
 .SplashStory {
-  width: 40%;
-  height: 250px;
+  width: 45%;
+  height: 200px;
+  margin-left: 36px;
+  margin-right: 36px;
   background-color: var(--main-bg-color);
   color: var(--darkgrey-text) !important;
 }
